@@ -17,6 +17,7 @@
             label="Search"
             outlined
             placeholder="Enter a movie title."
+            @keyup.enter="getResults"
           />
           <v-btn
             class="ma-2"
