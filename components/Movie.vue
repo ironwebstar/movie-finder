@@ -3,6 +3,7 @@
     <v-card-title class="headline">
       {{ movie.Title }}
     </v-card-title>
+
     <v-card-text>
       <img v-if="movie.Poster !== 'N/A'" class="card-img-top" :src="movie.Poster" :alt="movie.Title">
       <p class="card-text">
@@ -18,18 +19,6 @@ export default {
     movie: {
       type: Object,
       required: true
-    },
-    addToWatchLater: {
-      type: Function,
-      default: () => (true)
-    },
-    isInWatchLater: {
-      type: Function,
-      default: () => (true)
-    },
-    removeWatchLater: {
-      type: Function,
-      default: () => (true)
     }
   }
 }

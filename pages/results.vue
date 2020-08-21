@@ -42,7 +42,7 @@ import { mapGetters } from 'vuex'
 import Movie from '@/components/Movie.vue'
 
 export default {
-  name: 'Home',
+  name: 'SearchResults',
 
   components: {
     Movie
